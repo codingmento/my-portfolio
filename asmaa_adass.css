@@ -213,7 +213,7 @@ h2 {
     background-color: black;
     position: absolute;
     width: calc(100%+8px);
-    height: 50%;
+    height: 100%;
     border-left: 3px solid black;
     right: -8;
     animation: cursor 0.6s infinite;
@@ -1293,3 +1293,9 @@ h2 {
 
 
 }
+@media(max-width:500px){
+.typing-text span::after{
+   
+    height: 50%;
+   
+}}
