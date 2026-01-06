@@ -84,13 +84,18 @@ nav a {
     font-size: 18px;
 }
 
-/* شكل زر الهمبرغر */
+
 .menu-icon {
+    position: fixed;
+    /* أو absolute إذا بتحبيه داخل navbar */
+    top: 20px;
+    right: 20px;
     font-size: 30px;
     cursor: pointer;
+    z-index: 1000;
     display: none;
-    /* نخفيه بالكمبيوتر */
 }
+
 
 nav a:hover,
 nav a:active {
@@ -963,6 +968,26 @@ h2 {
     height: 100%;
 }
 
+/* see more */
+.hidden-project {
+    display: none;
+}
+
+.see-more-container {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#seeMoreBtn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: #92229f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 /* project end */
 /*eduction section */
 
@@ -1381,6 +1406,28 @@ h2 {
     .about-me-icon {
         display: none;
     }
+
+    .portfolio-content {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .portfolio-content .row {
+        min-width: 80%;
+        scroll-snap-align: start;
+    }
+
+    /* نخفي زر see more عالموبايل */
+    .see-more-container {
+        display: none;
+    }
+
+    /* نعرض كل المشاريع */
+    .hidden-project {
+        display: block;
+    }
 }
 
 @media(max-width:991px) {
@@ -1407,7 +1454,7 @@ h2 {
         flex-direction: column;
         align-items: flex-start;
         /* يخلي الروابط تبدا من الطرف */
-        background-color: #eb6de542;
+        background-color: #8a3585ed;
         position: absolute;
         top: 60px;
         right: 20px;
@@ -1416,7 +1463,7 @@ h2 {
         /* عرض صغير */
         padding: 15px;
         border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(240, 239, 240, 0.1);
+        box-shadow: 0 4px 6px rgba(211, 71, 211, 0.936);
         display: none;
     }
 
