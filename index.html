@@ -818,8 +818,31 @@
   </footer>
  
 </body>
-<script src="asmaa_adass.js">
-</script>
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
+  
+    menuIcon.onclick = function() {
+      navbar.classList.toggle('active');
+    }
+
+    
+  document.addEventListener('click', (e) => {
+    if (!menuIcon.contains(e.target) && !navbar.contains(e.target)) {
+      navbar.classList.remove('active');
+    }
+  });
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+seeMoreBtn.addEventListener("click", () => {
+  hiddenProjects.forEach((project) => {
+    project.style.display = "block";
+  });
+  seeMoreBtn.style.display = "none";
+});
+  </script>
 <!-- footer end -->
 
 </html>
+
