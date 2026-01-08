@@ -1397,35 +1397,12 @@ h2 {
 
 }
 
-@media(max-width:760px) {
-    .about-me-icon {
-        display: none;
-    }
-
-    .portfolio-content {
-        display: flex;
-        overflow-x: auto;
-        gap: 20px;
-        scroll-snap-type: x mandatory;
-    }
-
-    .portfolio-content .row {
-        min-width: 80%;
-        scroll-snap-align: start;
-    }
-
-    /* نخفي زر see more عالموبايل */
-    .see-more-container {
-        display: none;
-    }
-
-    /* نعرض كل المشاريع */
-    .hidden-project {
-        display: block;
-    }
-}
 
 @media(max-width:991px) {
+    .home-img {
+        display: none;
+    }
+
     section {
         padding: 10rem 3% 2rem;
     }
@@ -1437,9 +1414,7 @@ h2 {
 
 
 @media (max-width: 910px) {
-    .home-img {
-        display: none;
-    }
+
 
     .menu-icon {
         display: block;
@@ -1559,6 +1534,10 @@ h2 {
 
         height: 50%;
 
+    }
+
+    .layer p {
+        display: none;
     }
 }
 
