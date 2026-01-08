@@ -26,12 +26,14 @@
     </div>
 <nav class="navbar" id="navbar">
   <a href="#" class="active" id="homee">Home</a>
-  <a href="#services" id="services">Services</a>
-  <a href="#skills" id="skills">Skills</a>
-  <a href="#education" id="education">Education</a>
-  <a href="#experience" id="experience">Experience</a>
+ 
+ 
+  <a href="#about" id="About Me">About Me</a>
+    
+       <a href="#skills" id="skills">Skills</a>
+  <a href="#education" id="Education">Education</a>
   <a href="#projects" id="projects">Projects</a>
-  <a href="#about" id="about">About Me</a>
+ 
 </nav>
 
 
@@ -818,31 +820,8 @@
   </footer>
  
 </body>
-<script>
-    const menuIcon = document.getElementById('menu-icon');
-    const navbar = document.getElementById('navbar');
-  
-    menuIcon.onclick = function() {
-      navbar.classList.toggle('active');
-    }
-
-    
-  document.addEventListener('click', (e) => {
-    if (!menuIcon.contains(e.target) && !navbar.contains(e.target)) {
-      navbar.classList.remove('active');
-    }
-  });
-  const seeMoreBtn = document.getElementById("seeMoreBtn");
-const hiddenProjects = document.querySelectorAll(".hidden-project");
-
-seeMoreBtn.addEventListener("click", () => {
-  hiddenProjects.forEach((project) => {
-    project.style.display = "block";
-  });
-  seeMoreBtn.style.display = "none";
-});
-  </script>
+<script src="asmaa_adass.js">
+</script>
 <!-- footer end -->
 
 </html>
-
