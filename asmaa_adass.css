@@ -99,7 +99,7 @@ nav a {
 
 nav a:hover,
 nav a:active {
-    color: blueviolet;
+
     border-bottom: 3px solid rgb(191, 38, 191);
 }
 
@@ -1338,20 +1338,15 @@ h2 {
     }
 }
 
-@media(max-width:995) {
+@media(max-width:995px) {
     nav {
-        position: absolute;
-        display: none;
-        right: 0;
-        top: 100%;
 
         width: 40%;
-        border-left: 3px solid rgb(134, 32, 147);
-        border-bottom: 3px solid rgb(128, 47, 163);
+
         border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
+        padding: 2rem solid;
         background-color: black;
-        border-top: 0.1rem solid rgb(22, 12, 26);
+
     }
 
     nav .active {
@@ -1361,14 +1356,14 @@ h2 {
     nav a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 0;
     }
 
     nav a:hover,
     nav a.active {
-        padding: 1rem;
+        padding: .5rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid rgb(255, 10, 173);
+        border-bottom: 0.5rem solid #a4259b;
 
 
     }
