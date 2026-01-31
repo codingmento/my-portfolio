@@ -1471,6 +1471,11 @@ h2 {
         grid-template-columns: 1fr;
         text-align: center;
     }
+    
+    .about-me-icon {
+        display: none;
+    }
+
 
 
 }
@@ -1578,3 +1583,4 @@ h2 {
 
 
 }
+
